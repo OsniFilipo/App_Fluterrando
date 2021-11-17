@@ -1,14 +1,25 @@
-import 'package:flutter/material.dart'; // Aparece ele import por causa do runAPP
+import 'package:flutter/material.dart';
+import 'dart:ui';
 
-main() { // main seria o primeiro metado para a criação do projeto
-  runApp(Container( //  Containet é um widget
-    child: Center(
-      child: Text(
-        'Flutterando',
-        textDirection: TextDirection.ltr, // Indica o que é um texto
-        style: TextStyle(color: Colors.white, fontSize: 50.0), // esta a parte para colocar a cor do projeto
+main() {
+  runApp(AppWidget(title: '',));
+}
+
+class AppWidget extends StatelessWidget {
+  final String title;
+
+  const AppWidget({Key key,this.title}) : super(key: key)
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Center(
+        child: Text(
+          'Flutterando',
+          textDirection: TextDirection.ltr,
+          style: TextStyle(color: Colors.white, fontSize: 50.0),
+          ),
         ),
-      ),
-  ));
-} // Cuidado com as virgulas no final precisa esta tudo certo se abrio o um parendese tem que fechar
-
+    );
+  }
+}
