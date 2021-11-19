@@ -5,7 +5,7 @@ main() { // main seria o primeiro metado para a criação do projeto
   runApp(Container( //  Containet é um widget
     child: Center(
       child: Text(
-        'Flutterando',
+        'TESTE',
         textDirection: TextDirection.ltr, // Indica o que é um texto
         style: TextStyle(color: Colors.white, fontSize: 50.0), // esta a parte para colocar a cor do projeto
         ),
